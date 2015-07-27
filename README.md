@@ -7,3 +7,15 @@ Implementing the FrSky telemetry library and the Adafruit BMP183 SPI-barometric 
 This code is higly unstable! Use at your own risk!
 
 Everything is subject to change at the moment. I'll change the pinning (to reduce pin-change-interrupt usage) as soon as I've got my new MinimOSD and there will be also a new soldering manual. 
+
+Mandatory requirements:
+
+* DJI Naza lite or Naza V2 Flightcontroller
+* FrSky receiver with S.Port connector (X8R, X6R, X4R)
+* FrSky Taranis X9D radio 
+* some decent soldering experience
+
+Optional:
+
+* Voltage/Current Sensor (tested with TBS 50A sensor)
+* Adafruit BMP183 barometric pressure/altitude sensor
