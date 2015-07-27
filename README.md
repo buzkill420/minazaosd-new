@@ -6,8 +6,10 @@ Implementing the FrSky telemetry library and the Adafruit BMP183 SPI-barometric 
 
 This code is higly unstable! Use at your own risk!
 
-Everything is subject to change at the moment. I'll change the pinning (to reduce pin-change-interrupt usage) as soon as I've got my new MinimOSD and there will be also a new soldering manual. The reason to implement the FrSky S.Port telemetry is safety. The Taranis X9D radio is capable to log all relevant telemetry data like GPS position, speed, heading, battery voltage...
-That way it's possible to have an independent "remote" flight data recorder. IMHO that's a very useful function.
+Everything is subject to change at the moment. I'll change the pinning (to reduce pin-change-interrupt usage) as soon as I've got my new MinimOSD and there will be also a new soldering manual. 
+
+The reason to implement the FrSky S.Port telemetry protocol is *safety*. The Taranis X9D radio is capable to log all relevant telemetry data like GPS position, speed, heading, battery voltage, etc. on SD-card.
+That way it's possible to have an independent "remote" flight data recorder (with a bit of latency of course). IMHO that's a very useful function.
 
 Mandatory requirements:
 
