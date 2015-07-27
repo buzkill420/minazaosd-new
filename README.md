@@ -10,6 +10,7 @@ Everything is subject to change at the moment. I'll change the pinning (to reduc
 
 Mandatory requirements:
 
+* Arduino-IDE 1.6.3 (or higher, not tested)
 * DJI Naza lite or Naza V2 Flightcontroller
 * FrSky receiver with S.Port connector (X8R, X6R, X4R)
 * FrSky Taranis X9D radio 
