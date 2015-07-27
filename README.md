@@ -23,3 +23,8 @@ Optional:
 
 * Voltage/Current Sensor (tested with TBS 50A sensor)
 * Adafruit BMP183 barometric pressure/altitude sensor
+
+https://github.com/joehallenbeck/minazaosd-new/blob/master/MinimOSD-pins-intvectors.png
+
+https://github.com/joehallenbeck/minazaosd-new/blob/master/MinazaOSD-setup.png
+
