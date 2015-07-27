@@ -14,7 +14,10 @@ Mandatory requirements:
 * DJI Naza lite or Naza V2 Flightcontroller
 * FrSky receiver with S.Port connector (X8R, X6R, X4R)
 * FrSky Taranis X9D radio 
-* some decent soldering experience
+* a MinimOSD board
+* a sharp-tiped soldering iron
+* thin wire, at best insulated & pre-tinned "Bodge Wire"
+* some decent soldering experience 
 
 Optional:
 
