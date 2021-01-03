@@ -32,8 +32,8 @@
 #define FLIGHT_BATT_H_
 
 
-#define VOLTAGE_PIN			0
-#define CURRENT_PIN			1
+#define VOLTAGE_PIN			0       //A0 pin23
+#define CURRENT_PIN			1       // A1 pin 22 
 
 #define REF_VOLTAGE			1.1			// INTERNAL: a built-in reference, equal to 1.1 volts on the ATmega168 or ATmega328
 #define LOW_VOLTAGE			9.6			// filter start value for 3s LiPo
