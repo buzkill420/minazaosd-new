@@ -209,10 +209,10 @@ void OnMavlinkTimer()			// duration is up to approx. 10ms depending on choosen d
 
 //    baro_read();
     flight_batt_read();
-//    analog_rssi_read();
-//    rssi = (int16_t) osd_rssi;
-//    if (!rssiraw_on) rssi = (int16_t)((float)(rssi - rssipersent)/(float)(rssical-rssipersent)*100.0f);
-//    if (rssi < -99) rssi = -99;
+    analog_rssi_read();
+    rssi = (int16_t) osd_rssi;
+    if (!rssiraw_on) rssi = (int16_t)((float)(rssi - rssipersent)/(float)(rssical-rssipersent)*100.0f);
+    if (rssi < -99) rssi = -99;
 
 //    updateTravelDistance();		// calculate travel distance
     setHeadingPattern();		// generate the heading pattern
