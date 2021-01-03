@@ -19,7 +19,7 @@ FrSkySportSensorRpm rpm;
 bool telemetryRunning = false;
 
 void telemetry_init(void) {
-  telemetry.begin(FrSkySportSingleWireSerial::SOFT_SERIAL_PIN_3, &gps, &fcs, &vario, &rpm);
+  telemetry.begin(FrSkySportSingleWireSerial::SOFT_SERIAL_PIN_3, &gps, &fcs, &flvv, &vario, &rpm);
 }
 
 void telemetry_start(void) {
