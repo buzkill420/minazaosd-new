@@ -38,13 +38,15 @@ void telemetry_send(void) {
   /* TODO: Check stability! GPS Telemetry seems to stop after 1 minute!!!  */
   /*************************************************************************/
   
+  int altitude = osd_alt - osd_home_alt; // calculate Altitude in m (can be nevative)
+  
   if (telemetryRunning) {
     // start_time = (int) (millis() / 1000);
     fcs.setData(osd_curr_A * .01,   // Current consumption in amps
                   osd_vbat_A);       // Battery voltage in volts
   
     gps.setData(osd_lat, osd_lon,   // Latitude and longitude in degrees decimal (positive for N/E, negative for S/W)
-                  osd_alt - osd_home_alt,            // Altitude in m (can be nevative)
+                  altitude,            // Altitude in m (can be nevative)
                   osd_groundspeed,    // Speed in m/s
                   osd_heading /* ,        // Course over ground in degrees
                   0, 0, 0,          // Date (year - 2000, month, day)
