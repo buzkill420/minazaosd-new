@@ -157,7 +157,7 @@ void setup()
     panel = 0; //set panel to 0 to start in the first navigation screen
 
     flight_batt_init();
-    //analog_rssi_init();
+    analog_rssi_init();
     naza_led_init();
     telemetry_init();
         
