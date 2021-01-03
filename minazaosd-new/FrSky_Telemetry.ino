@@ -37,10 +37,12 @@ void telemetry_send(void) {
   /*************************************************************************/
   /* TODO: Check stability! GPS Telemetry seems to stop after 1 minute!!!  */
   /*************************************************************************/
-  
-  int altitude = osd_alt - osd_home_alt; // calculate Altitude in m (can be nevative)
+
   
   if (telemetryRunning) {
+    
+    int altitude = osd_alt - osd_home_alt; // calculate Altitude in m (can be nevative)
+    
     // start_time = (int) (millis() / 1000);
     fcs.setData(osd_curr_A * .01,   // Current consumption in amps
                   osd_vbat_A);       // Battery voltage in volts
