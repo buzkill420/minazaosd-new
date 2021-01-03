@@ -190,10 +190,11 @@ void loop()
 {
     if (nazatalk_read()) {
         OnMavlinkTimer();
+	telemetry_send();    
     } else {
 	mavlinkTimer.Run();
     }
-    telemetry_send();
+
 }
 
 /* *********************************************** */
