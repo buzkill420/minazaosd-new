@@ -13,7 +13,7 @@
 
 #define PWM_CHECK(x)	(x > 1700)
 
-#define PWM_PIN		3			// MinimOSD PAL pin
+#define PWM_PIN		20			// 3 default MinimOSD PAL pin
 #define PWM_INT  	1
 
 //#define PIN_READ	digitalRead(PWM_PIN)	// slower than direct access
