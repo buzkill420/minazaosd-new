@@ -90,12 +90,8 @@ along with this program. If not, see <http://www.gnu.org/licenses/>
 #include "NazaInt.h"
 #include "FrSky_Telemetry.h"
 
-#if defined (SETUP_VOLT_DIFF_RATIO) || defined (SETUP_AMP_OFFSET) || defined (SETUP_AMP_PER_VOLT)
-#include "PWMRead.h"
-#endif
-
 #include "FlightBatt.h"
-//#include "AnalogRssi.h"
+#include "AnalogRssi.h"
 
 
 
