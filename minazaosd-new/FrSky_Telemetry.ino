@@ -1,6 +1,6 @@
 #include "FrSkySportSensor.h"
 #include "FrSkySportSensorFcs.h"
- #include "FrSkySportSensorFlvss.h"
+#include "FrSkySportSensorFlvss.h"
 #include "FrSkySportSensorGps.h"
 #include "FrSkySportSensorRpm.h"
 #include "FrSkySportSensorVario.h"
