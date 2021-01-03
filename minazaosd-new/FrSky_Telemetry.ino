@@ -1,6 +1,6 @@
 #include "FrSkySportSensor.h"
 #include "FrSkySportSensorFcs.h"
-// #include "FrSkySportSensorFlvss.h"
+ #include "FrSkySportSensorFlvss.h"
 #include "FrSkySportSensorGps.h"
 #include "FrSkySportSensorRpm.h"
 #include "FrSkySportSensorVario.h"
@@ -10,7 +10,7 @@
 
 
 FrSkySportSensorFcs fcs;                               // Create FCS sensor with default ID
-//FrSkySportSensorFlvss flvss;                          // Create FLVSS sensor with default ID
+FrSkySportSensorFlvss flvss;                          // Create FLVSS sensor with default ID
 FrSkySportSensorGps gps;                               // Create GPS sensor with default ID
 FrSkySportSensorVario vario;     
 FrSkySportTelemetry telemetry;                         // Create Variometer telemetry object
@@ -46,6 +46,8 @@ void telemetry_send(void) {
     // start_time = (int) (millis() / 1000);
     fcs.setData(osd_curr_A * .01,   // Current consumption in amps
                   osd_vbat_A);       // Battery voltage in volts
+    
+    flvss.setData(osd_vbat_A);       // Battery voltage in volts
   
     gps.setData(osd_lat, osd_lon,   // Latitude and longitude in degrees decimal (positive for N/E, negative for S/W)
                   altitude,            // Altitude in m (can be nevative)
